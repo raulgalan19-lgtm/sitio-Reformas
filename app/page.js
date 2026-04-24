@@ -2,8 +2,7 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
-import Lottie from 'lottie-react';
-import particularesAnimation from '../public/particulareslottie.json';
+
 
 const Hero = () => {
   return (
