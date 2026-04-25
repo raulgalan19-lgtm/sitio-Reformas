@@ -8,15 +8,15 @@ const Hero = () => {
   return (
     <section id="inicio" className="relative flex items-center min-h-[90vh] pt-24 pb-20 lg:pt-32 lg:pb-32 bg-slate-50 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          poster="/videoframe_2223.png"
-          className="w-full h-full object-cover"
+        <video 
+          autoPlay 
+          loop 
+          muted 
+          playsInline 
+          className="absolute top-0 left-0 w-full h-full object-cover z-0"
+          poster="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=2000"
         >
-          <source src="/videoHero2.mp4" type="video/mp4" />
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-hand-painting-a-wall-1234-large.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/50 via-50% to-transparent to-80%"></div>
       </div>
@@ -222,23 +222,23 @@ const Services = () => {
   const particulares = [
     {
       title: 'Reformas integrales',
-      description: 'Transformamos tu vivienda por completo adaptándola a tu estilo de vida actual, coordinando todos los gremios necesarios.',
-      image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80'
+      description: 'Desde el diseño inicial hasta la entrega final, transformamos viviendas antiguas en hogares modernos, funcionales y con acabados de primera calidad.',
+      image: 'https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Fontanería',
-      description: 'Instalaciones completas, reparaciones, cambios de bañera por plato de ducha y solución rápida de averías y fugas.',
-      image: '/fontaneria.jpg'
+      description: 'Sustitución de tuberías, instalación de sanitarios, reparación de humedades y reformas completas de baños y cocinas.',
+      image: 'https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Pintura',
-      description: 'Alisado de paredes, pintura decorativa e industrial utilizando materiales de alta durabilidad y acabados perfectos.',
-      image: '/pintura.jpg'
+      description: 'Alisado de paredes, aplicación de pinturas plásticas de alta calidad, esmaltes, lacados y papeles pintados para un acabado perfecto.',
+      image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Electricidad',
       description: 'Boletines, iluminación LED, actualización de cuadros eléctricos y nuevas instalaciones bajo normativa vigente.',
-      image: '/electricidad.jpg'
+      image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=1200'
     }
   ];
 
@@ -246,32 +246,32 @@ const Services = () => {
     {
       title: 'Fontanería comunitaria',
       description: 'Mantenimiento de bajantes, sustitución de ascendentes y reparación de grupos de presión y calderas centrales.',
-      image: '/fontaneriacom.jpg'
+      image: 'https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Electricidad',
       description: 'Adecuación a normativa de cuartos de contadores, iluminación eficiente en zonas comunes y mantenimiento general.',
-      image: '/electricidadcom.jpg'
+      image: 'https://images.unsplash.com/photo-1454165833767-027ffea9e77b?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Reparaciones en cubierta',
       description: 'Impermeabilizaciones, reparación de goteras, limpieza de canalones y mantenimiento de tejados y azoteas.',
-      image: '/cubiertacom.jpg'
+      image: 'https://images.unsplash.com/photo-1632759162353-194941ee24ff?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Trabajos de pintura',
       description: 'Pintura de escaleras, portales, garajes y zonas comunes exteriores garantizando la mínima molestia a los vecinos.',
-      image: '/pinturacom.jpg'
+      image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Actuaciones en fachadas',
       description: 'Rehabilitación de fachadas, aislamiento térmico SATE, reparación de cornisas y revestimientos exteriores.',
-      image: '/fachadacom.jpg'
+      image: 'https://images.unsplash.com/photo-1590069230002-70cc69456651?auto=format&fit=crop&q=80&w=1200'
     },
     {
       title: 'Jardinería',
       description: 'Mantenimiento integral de jardines, podas en altura, sistemas de riego automático y diseño de espacios verdes comunitarios.',
-      image: '/jardineriacom.jpg'
+      image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=1200'
     }
   ];
 
@@ -338,7 +338,7 @@ const Services = () => {
           {/* Columna Derecha: Imagen (60%) */}
           <div className="lg:w-[60%] h-[450px] lg:h-[700px] overflow-hidden">
             <img 
-              src="/cubiertacom.jpg" 
+              src="https://images.unsplash.com/photo-1632759162353-194941ee24ff?auto=format&fit=crop&q=80&w=1200" 
               alt="Servicios Comunidades" 
               className={`w-full h-full object-cover transition-all duration-[4000ms] ease-out ${
                 isComunidadesVisible ? 'grayscale-0' : 'grayscale'
