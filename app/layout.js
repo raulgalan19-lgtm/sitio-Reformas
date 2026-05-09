@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "ProReformas Madrid",
+  title: "ReformasJG Madrid",
   description: "Especialistas en reformas y mantenimiento en Madrid",
 };
 

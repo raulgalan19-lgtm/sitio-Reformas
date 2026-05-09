@@ -5,7 +5,7 @@ const Footer = () => (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
       <div className="col-span-1 md:col-span-2">
         <span className="text-2xl font-bold text-white tracking-tight mb-4 inline-block">
-          Pro<span className="text-blue-500">Reformas</span>
+          Reformas<span className="text-red-500">JG</span>
         </span>
         <p className="text-slate-400 text-sm max-w-sm mx-auto md:mx-0">
           Ofrecemos soluciones integrales en reformas, electricidad, pintura y fontanería para particulares y comunidades de propietarios en Madrid.
@@ -30,7 +30,7 @@ const Footer = () => (
       </div>
     </div>
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-8 border-t border-slate-800 text-sm text-slate-500 flex flex-col md:flex-row justify-between items-center">
-      <p>© {new Date().getFullYear()} ProReformas Madrid. Todos los derechos reservados.</p>
+      <p>© {new Date().getFullYear()} ReformasJG Madrid. Todos los derechos reservados.</p>
       <p className="mt-2 md:mt-0">Diseñado con Tailwind CSS y React</p>
     </div>
   </footer>

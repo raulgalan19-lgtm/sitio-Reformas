@@ -28,8 +28,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <span className="text-2xl font-bold text-slate-800 tracking-tight">
-              Pro<span className="text-blue-600">Reformas</span>
+            <span className="text-2xl font-bold text-slate-900 tracking-tight">
+              Reformas<span className="text-red-600">JG</span>
             </span>
           </div>
 
