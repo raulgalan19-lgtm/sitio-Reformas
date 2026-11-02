@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { Phone, Mail, MapPin, ArrowRight, CheckCircle2 } from 'lucide-react';
+import Link from 'next/link';
 
 
 const Hero = () => {
@@ -33,9 +34,9 @@ const Hero = () => {
             <a href="#contacto" className="inline-flex justify-center items-center px-8 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors shadow-lg hover:shadow-xl">
               Solicitar Presupuesto
             </a>
-            <a href="#servicios-particulares" className="inline-flex justify-center items-center px-8 py-3 border-2 border-white/80 text-base font-medium rounded-lg text-white hover:bg-white hover:text-slate-900 transition-colors">
+            <Link href="/particulares" className="inline-flex justify-center items-center px-8 py-3 border-2 border-white/80 text-base font-medium rounded-lg text-white hover:bg-white hover:text-slate-900 transition-colors">
               Ver Servicios
-            </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -71,11 +72,10 @@ const About = () => {
 
   return (
     <section className="py-24 bg-white overflow-hidden">
-      <div 
+      <div
         ref={elementRef}
-        className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center transition-all duration-[3500ms] ease-out transform ${
-          isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-        }`}
+        className={`max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center transition-all duration-[3500ms] ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
+          }`}
       >
         <h2 className="text-3xl font-bold text-slate-800 mb-8 lowercase tracking-tight first-letter:uppercase">Quiénes somos</h2>
         <div className="prose prose-lg mx-auto text-slate-600 text-left md:text-justify space-y-6">
@@ -83,28 +83,25 @@ const About = () => {
             Ofrecemos soluciones integrales en reformas, electricidad, pintura y fontanería para particulares y comunidades de propietarios en Madrid. Nuestro equipo de profesionales se encarga de todo tipo de trabajos, desde pequeñas reparaciones y mantenimiento hasta reformas completas de viviendas, oficinas y zonas comunes, garantizando siempre resultados de calidad, eficiencia y cumplimiento de plazos.
           </p>
           <p className="leading-relaxed">
-            Trabajamos con materiales de primera calidad and adaptamos cada proyecto a las necesidades de nuestros clientes, proporcionando un servicio rápido, seguro y personalizado para mejorar el confort, la funcionalidad y el valor de cualquier espacio.
+            Trabajamos con materiales de primera calidad y adaptamos cada proyecto a las necesidades de nuestros clientes, proporcionando un servicio rápido, seguro y personalizado para mejorar el confort, la funcionalidad y el valor de cualquier espacio.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-          <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[600ms] ease-out transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
-          }`}>
+          <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[600ms] ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
+            }`}>
             <CheckCircle2 className="w-10 h-10 text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold text-slate-800 mb-2">Calidad Garantizada</h3>
             <p className="text-slate-600 text-center text-sm">Materiales de primera y acabados impecables en cada proyecto.</p>
           </div>
-          <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[1200ms] ease-out transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
-          }`}>
+          <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[1200ms] ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
+            }`}>
             <CheckCircle2 className="w-10 h-10 text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">Cumplimiento</h3>
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">Cumplimos los plazos</h3>
             <p className="text-slate-600 text-center text-sm">Respetamos estrictamente los plazos acordados con nuestros clientes.</p>
           </div>
-          <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[1800ms] ease-out transform ${
-            isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
-          }`}>
+          <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[1800ms] ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
+            }`}>
             <CheckCircle2 className="w-10 h-10 text-blue-600 mb-4" />
             <h3 className="text-xl font-semibold text-slate-800 mb-2">Servicio Integral</h3>
             <p className="text-slate-600 text-center text-sm">Coordinamos todos los gremios para que no tengas que preocuparte de nada.</p>
@@ -142,11 +139,10 @@ const ServiceCard = ({ title, description, image, index }) => {
   }, []);
 
   return (
-    <div 
+    <div
       ref={cardRef}
-      className={`group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-y-2 transform ${
-        isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
-      }`}
+      className={`group relative overflow-hidden rounded-3xl bg-slate-900 border border-slate-800 shadow-xl transition-all duration-700 hover:shadow-2xl hover:-translate-y-2 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-12 opacity-0'
+        }`}
       style={{ transitionDelay: `${index * 100}ms` }}
     >
       <div className="aspect-[4/5] overflow-hidden">
@@ -165,18 +161,18 @@ const ServiceCard = ({ title, description, image, index }) => {
         <div className="flex items-center gap-2 text-blue-400 mb-3 font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <CheckCircle2 className="w-4 h-4" /> Servicio Premium
         </div>
-        
+
         <h3 className="text-3xl font-light tracking-wide text-white mb-3">
           {title}
         </h3>
-        
+
         <div className="overflow-hidden h-0 group-hover:h-auto transition-all duration-500">
           <p className="text-slate-300 text-base leading-relaxed mb-6 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
             {description}
           </p>
-          
-          <a 
-            href="#contacto" 
+
+          <a
+            href="#contacto"
             className="inline-flex items-center text-base font-semibold text-blue-400 hover:text-blue-300 transition-colors"
           >
             Saber más <ArrowRight className="ml-2 w-5 h-5" />
@@ -195,7 +191,7 @@ const Services = () => {
 
   React.useEffect(() => {
     const observerOptions = { threshold: 0.1 };
-    
+
     const particularesObserver = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setIsParticularesVisible(true);
@@ -278,24 +274,22 @@ const Services = () => {
   return (
     <div className="bg-slate-50 py-20 overflow-x-hidden">
       {/* Sección Particulares */}
-      <section 
+      <section
         ref={particularesRef}
-        id="servicios-particulares" 
-        className={`max-w-[1400px] mx-auto px-0 mb-16 overflow-hidden rounded-[2rem] bg-white transition-all duration-[3000ms] transform ${
-          isParticularesVisible 
-            ? 'translate-y-0 opacity-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)]' 
-            : 'translate-y-20 opacity-0'
-        }`}
+        id="servicios-particulares"
+        className={`max-w-[1400px] mx-auto px-0 mb-16 overflow-hidden rounded-[2rem] bg-white transition-all duration-[3000ms] transform ${isParticularesVisible
+          ? 'translate-y-0 opacity-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)]'
+          : 'translate-y-20 opacity-0'
+          }`}
       >
         <div className="flex flex-col lg:flex-row">
           {/* Columna Izquierda: Imagen (60%) */}
           <div className="lg:w-[60%] h-[450px] lg:h-[700px] overflow-hidden">
-            <img 
-              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80" 
-              alt="Servicios Particulares" 
-              className={`w-full h-full object-cover transition-all duration-[4000ms] ease-out ${
-                isParticularesVisible ? 'grayscale-0' : 'grayscale'
-              }`} 
+            <img
+              src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&q=80"
+              alt="Servicios Particulares"
+              className={`w-full h-full object-cover transition-all duration-[4000ms] ease-out ${isParticularesVisible ? 'grayscale-0' : 'grayscale'
+                }`}
             />
           </div>
 
@@ -304,7 +298,7 @@ const Services = () => {
             <h2 className="text-2xl md:text-3xl font-light tracking-[0.2em] text-slate-800 uppercase mb-8 leading-tight text-center">
               SERVICIOS A PARTICULARES
             </h2>
-            
+
             <div className="space-y-6 text-slate-600 max-w-lg mb-12 text-justify px-4 md:px-12">
               <p className="text-sm md:text-base leading-relaxed font-light">
                 Con nuestros servicios integrales te ofrecemos soluciones estéticas, funcionales y totalmente personalizadas. Ya sea una reforma integral o una mejora puntual, adaptamos cada espacio a tu estilo y necesidades, combinando técnica, creatividad y atención al detalle.
@@ -314,35 +308,33 @@ const Services = () => {
               </p>
             </div>
 
-            <a 
-              href="#contacto" 
+            <Link
+              href="/particulares"
               className="px-8 py-3 border-2 border-slate-900 text-sm font-bold tracking-widest text-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300 uppercase rounded-lg shadow-sm hover:shadow-lg"
             >
               PIDE PRESUPUESTO GRATIS
-            </a>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* Sección Comunidades */}
-      <section 
+      <section
         ref={comunidadesRef}
-        id="servicios-comunidades" 
-        className={`max-w-[1400px] mx-auto px-0 mb-16 overflow-hidden rounded-[2rem] bg-white transition-all duration-[3000ms] transform ${
-          isComunidadesVisible 
-            ? 'translate-y-0 opacity-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)]' 
-            : 'translate-y-20 opacity-0'
-        }`}
+        id="servicios-comunidades"
+        className={`max-w-[1400px] mx-auto px-0 mb-16 overflow-hidden rounded-[2rem] bg-white transition-all duration-[3000ms] transform ${isComunidadesVisible
+          ? 'translate-y-0 opacity-100 shadow-[0_20px_50px_rgba(0,0,0,0.08)]'
+          : 'translate-y-20 opacity-0'
+          }`}
       >
         <div className="flex flex-col lg:flex-row-reverse">
           {/* Columna Derecha: Imagen (60%) */}
           <div className="lg:w-[60%] h-[450px] lg:h-[700px] overflow-hidden">
-            <img 
-              src="/cubiertacom.jpg" 
-              alt="Servicios Comunidades" 
-              className={`w-full h-full object-cover transition-all duration-[4000ms] ease-out ${
-                isComunidadesVisible ? 'grayscale-0' : 'grayscale'
-              }`} 
+            <img
+              src="/cubiertacom.jpg"
+              alt="Servicios Comunidades"
+              className={`w-full h-full object-cover transition-all duration-[4000ms] ease-out ${isComunidadesVisible ? 'grayscale-0' : 'grayscale'
+                }`}
             />
           </div>
 
@@ -351,7 +343,7 @@ const Services = () => {
             <h2 className="text-2xl md:text-3xl font-light tracking-[0.2em] text-slate-800 uppercase mb-8 leading-tight text-center">
               SERVICIOS A COMUNIDADES
             </h2>
-            
+
             <div className="space-y-6 text-slate-600 max-w-lg mb-12 text-justify px-4 md:px-12">
               <p className="text-sm md:text-base leading-relaxed font-light">
                 Ofrecemos un servicio especializado para comunidades de propietarios, asegurando el correcto mantenimiento y valorización de la finca. Nos encargamos de la gestión técnica de todos los gremios para garantizar intervenciones eficaces y duraderas.
@@ -361,12 +353,12 @@ const Services = () => {
               </p>
             </div>
 
-            <a 
-              href="#contacto" 
+            <Link
+              href="/comunidades"
               className="px-8 py-3 border-2 border-slate-900 text-sm font-bold tracking-widest text-slate-900 hover:bg-slate-900 hover:text-white transition-all duration-300 uppercase rounded-lg shadow-sm hover:shadow-lg"
             >
               PIDE PRESUPUESTO GRATIS
-            </a>
+            </Link>
           </div>
         </div>
       </section>
