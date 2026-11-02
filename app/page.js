@@ -97,7 +97,7 @@ const About = () => {
           <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[1200ms] ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
             }`}>
             <CheckCircle2 className="w-10 h-10 text-blue-600 mb-4" />
-            <h3 className="text-xl font-semibold text-slate-800 mb-2">Cumplimos los plazos</h3>
+            <h3 className="text-xl font-semibold text-slate-800 mb-2">Cumplimos</h3>
             <p className="text-slate-600 text-center text-sm">Respetamos estrictamente los plazos acordados con nuestros clientes.</p>
           </div>
           <div className={`flex flex-col items-center p-6 bg-slate-50 rounded-2xl transition-all duration-[3500ms] delay-[1800ms] ease-out transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0'
